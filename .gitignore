@@ -1,0 +1,20 @@
+# Java compiled #
+#################
+*.class
+
+# IDE #
+###########
+.classpath
+.project
+.settings
+.idea
+*.pjb
+*.prj
+*.sws
+*.iml
+bin/
+
+# Maven #
+#########
+*.versionsBackup
+target/
