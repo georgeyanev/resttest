@@ -5,7 +5,6 @@ import static javax.ws.rs.client.Entity.xml;
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.junit.Assert.assertThat;
 
-import org.glassfish.jersey.moxy.xml.MoxyXmlFeature;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import resttest.jaxb.Customer;
@@ -21,7 +20,7 @@ public class RestClientTest {
 
   @BeforeClass
   public static void beforeClass() {
-    client = ClientBuilder.newClient().register(MoxyXmlFeature.class).register(MyJaxbContextProvider.class);
+    client = ClientBuilder.newClient().register(MyJaxbContextProvider.class);
   }
 
   @Test
