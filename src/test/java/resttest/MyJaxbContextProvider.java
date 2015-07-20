@@ -7,7 +7,7 @@ import javax.xml.bind.JAXBContext;
 import javax.xml.bind.JAXBException;
 
 @Provider
-@Produces({"application/xml", "application/json"})
+@Produces({"application/xml"})
 public class MyJaxbContextProvider implements ContextResolver<JAXBContext> {
 
   private JAXBContext context;
