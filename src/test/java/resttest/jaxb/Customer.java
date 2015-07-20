@@ -9,8 +9,8 @@ import javax.xml.bind.annotation.XmlType;
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlType(name = "", propOrder = {
     "id",
-    "firstname",
-    "lastname",
+    "firstName",
+    "lastName",
     "street",
     "city"
 })
